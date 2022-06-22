@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+header {
+  @apply text-white bg-center bg-cover bg-fixed;
+  background-image: url("../images/bkg-hero-header.jpg");
+}
+
+nav {
+  @apply flex items-center justify-around py-10 px-14;
+}
+nav div {
+  @apply flex justify-center w-36;
+}
+nav ul {
+  @apply flex justify-center;
+}
+nav ul li {
+  @apply px-3;
+}
+
+.catch-phrase {
+  @apply py-32 flex flex-col justify-center items-center;
+}
+.catch-phrase h1 {
+  @apply text-7xl font-bold py-3;
+}
+.catch-phrase h1 span {
+  @apply text-yellow-500;
+}
+.catch-phrase h5 {
+  @apply text-center px-16 py-6;
+}
+.catch-phrase div {
+  @apply flex justify-center items-center pb-32;
+}
+
+.btn-yellow {
+  @apply bg-yellow-500 text-white rounded m-6 px-20 py-3;
+}
+
+.btn-border-white {
+  @apply border-white border-2 m-6 px-20 py-3 rounded;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+section {
+  @apply flex flex-col justify-center items-center;
+}
+section p {
+  color: #777777;
+  @apply px-36 text-center py-10;
+}
+section h3 {
+  color: #2b2b2b;
+  @apply text-2xl font-bold pt-8;
+}
+
+.about {
+  @apply bg-white;
+}
+
+.project {
+  @apply bg-gray-300;
+}
+.project p {
+  @apply py-2;
+}
+.project div {
+  @apply pt-10 grid grid-cols-4;
+}
+
+.testimonial {
+  @apply text-white bg-center bg-cover bg-fixed;
+  background-image: url("../images/bkg-testimonial.jpg ");
+}
+.testimonial h3 {
+  @apply text-white;
+}
+.testimonial img {
+  @apply rounded-full my-10;
+}
+.testimonial p {
+  background-color: #694b87;
+  @apply mx-16 px-10 text-white rounded;
+}
+
+/*# sourceMappingURL=input.css.map */

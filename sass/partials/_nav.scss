@@ -1,0 +1,15 @@
+nav{
+    @apply flex items-center justify-around py-10 px-14;
+
+    div{
+        @apply flex justify-center w-36;
+    }
+    ul{
+        @apply flex justify-center ;
+
+        li{
+            @apply px-3;
+        }
+
+    }
+}

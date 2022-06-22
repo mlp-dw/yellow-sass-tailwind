@@ -1,0 +1,37 @@
+section{
+    @apply flex flex-col justify-center items-center ;
+    p{
+        color: $text-color;
+        @apply px-36 text-center py-10;
+    }
+    h3{
+        color: darken($text-color, 30%);
+        @apply text-2xl font-bold pt-8;
+    }
+}
+.about{
+    @apply bg-white;
+}
+.project{
+    @apply bg-gray-300;
+    p{
+        @apply py-2;
+    }
+    div{
+        @apply pt-10 grid grid-cols-4;
+    }
+}
+.testimonial{
+    @apply text-white bg-center bg-cover bg-fixed;
+    background-image: url('../images/bkg-testimonial.jpg ');
+    h3{
+        @apply text-white;
+    }
+    img{
+        @apply rounded-full my-10;
+    }
+    p{
+        background-color: #694b87;
+        @apply mx-16 px-10 text-white rounded;
+    }
+}

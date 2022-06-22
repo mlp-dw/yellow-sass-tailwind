@@ -1,0 +1,11 @@
+{
+  "name": "yellow-sass---copie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "sass":"sass --watch ./sass/main.scss:./css/input.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

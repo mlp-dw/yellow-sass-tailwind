@@ -1,0 +1,15 @@
+.catch-phrase{
+    @apply py-32 flex flex-col justify-center items-center;
+    h1{
+        @apply text-7xl font-bold py-3;
+        span{
+            @apply text-yellow-500;
+        }
+    }
+    h5{
+        @apply text-center px-16 py-6;
+    }
+    div{
+        @apply flex justify-center items-center pb-32;
+    }
+}
