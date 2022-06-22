@@ -739,4 +739,9 @@ section h3 {
   background: #694b87;
 }
 
+.testimonial h4 {
+  padding-bottom: 2rem;
+  font-weight: 700;
+}
+
 /*# sourceMappingURL=output.css.map */

@@ -90,5 +90,8 @@ section h3 {
   height: 30px;
   background: #694b87;
 }
+.testimonial h4 {
+  @apply font-bold pb-8;
+}
 
 /*# sourceMappingURL=input.css.map */
