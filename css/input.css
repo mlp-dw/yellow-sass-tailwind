@@ -84,5 +84,14 @@ section h3 {
   background-color: #694b87;
   @apply mx-16 px-10 text-white rounded;
 }
+.testimonial div {
+  transform: translate(0, -50%) rotate(45deg);
+  width: 30px;
+  height: 30px;
+  background: #694b87;
+}
+.testimonial h4 {
+  @apply;
+}
 
 /*# sourceMappingURL=input.css.map */
