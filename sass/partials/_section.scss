@@ -31,7 +31,17 @@ section{
         @apply rounded-full my-10;
     }
     p{
-        background-color: #694b87;
+        background-color: $bg-violet;
         @apply mx-16 px-10 text-white rounded;
     }
+    div{
+        transform: translate(0, -50%,) rotate(45deg);
+        width: 30px;
+        height: 30px;
+        background: $bg-violet;
+    }
+    h4{
+        @apply  ;
+    }
 }
+
