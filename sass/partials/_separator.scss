@@ -5,3 +5,19 @@
     border-color: $text-color;
     @apply inline-block border-l-2 h-10 m-5;
 } 
+@media screen and (max-width: 768px){
+    .vertical-white { 
+       display: none;
+    } 
+    .vertical-grey { 
+        display: none;
+    }
+}
+@media screen and (max-width: 600px){
+    .vertical-white { 
+        display: none;
+     }
+    .vertical-grey { 
+        display: none;
+    } 
+}

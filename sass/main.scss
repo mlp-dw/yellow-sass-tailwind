@@ -2,11 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "partials/media-queries";
 @import "partials/color";
+@import "partials/font";
 @import "partials/header";
 @import "partials/nav";
 @import "partials/catch-phrase";
 @import "partials/button";
 @import "partials/section";
 @import "partials/separator";
-
+@import "partials/footer";

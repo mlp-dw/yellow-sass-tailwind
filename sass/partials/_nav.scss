@@ -13,3 +13,39 @@ nav{
 
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    nav{
+        @apply flex flex-col items-center justify-around ;
+    
+        div{
+            @apply flex justify-center w-36;
+        }
+        ul{
+            @apply flex flex-col items-center justify-center ;
+    
+            li{
+                @apply px-3;
+            }
+    
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    nav{
+        @apply flex flex-col items-center justify-around ;
+    
+        div{
+            @apply flex justify-center w-36;
+        }
+        ul{
+            @apply flex flex-col items-center justify-center ;
+    
+            li{
+                @apply px-3;
+            }
+    
+        }
+    }
+}

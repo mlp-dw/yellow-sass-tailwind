@@ -13,3 +13,50 @@
         @apply flex justify-center items-center pb-32;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    .catch-phrase{
+        @apply py-32 flex flex-col justify-center items-center;
+        h1{
+            @apply text-5xl text-center font-bold py-3;
+            span{
+                @apply text-yellow-500;
+            }
+        }
+        h5{
+            @apply text-center px-16 py-6;
+        }
+        div{
+            @apply flex flex-col justify-center items-center pb-24;
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    .catch-phrase{
+        @apply py-32 flex flex-col justify-center items-center;
+        h1{
+            @apply text-4xl font-bold py-3;
+            span{
+                @apply text-yellow-500;
+            }
+        }
+        h5{
+            @apply text-center px-16 py-6;
+        }
+        div{
+            @apply flex flex-col justify-center items-center pb-20;
+        }
+    }
+}
+@media screen and (max-width: 460px){
+    .catch-phrase{
+        @apply py-10 flex flex-col justify-center items-center;
+        h1{
+            @apply text-xl font-bold py-3;
+            span{
+                @apply text-yellow-500;
+            }
+        }
+    }
+}

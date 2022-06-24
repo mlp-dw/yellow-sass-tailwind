@@ -1,6 +1,11 @@
+@import url("http://fonts.googleapis.com/css?family=Poppins");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  font-family: "Poppins", sans serif;
+}
+
 header {
   @apply text-white bg-center bg-cover bg-fixed;
   background-image: url("../images/bkg-hero-header.jpg");
@@ -19,6 +24,34 @@ nav ul li {
   @apply px-3;
 }
 
+@media screen and (max-width: 768px) {
+  nav {
+    @apply flex flex-col items-center justify-around;
+  }
+  nav div {
+    @apply flex justify-center w-36;
+  }
+  nav ul {
+    @apply flex flex-col items-center justify-center;
+  }
+  nav ul li {
+    @apply px-3;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav {
+    @apply flex flex-col items-center justify-around;
+  }
+  nav div {
+    @apply flex justify-center w-36;
+  }
+  nav ul {
+    @apply flex flex-col items-center justify-center;
+  }
+  nav ul li {
+    @apply px-3;
+  }
+}
 .catch-phrase {
   @apply py-32 flex flex-col justify-center items-center;
 }
@@ -35,6 +68,51 @@ nav ul li {
   @apply flex justify-center items-center pb-32;
 }
 
+@media screen and (max-width: 768px) {
+  .catch-phrase {
+    @apply py-32 flex flex-col justify-center items-center;
+  }
+  .catch-phrase h1 {
+    @apply text-5xl text-center font-bold py-3;
+  }
+  .catch-phrase h1 span {
+    @apply text-yellow-500;
+  }
+  .catch-phrase h5 {
+    @apply text-center px-16 py-6;
+  }
+  .catch-phrase div {
+    @apply flex flex-col justify-center items-center pb-24;
+  }
+}
+@media screen and (max-width: 600px) {
+  .catch-phrase {
+    @apply py-32 flex flex-col justify-center items-center;
+  }
+  .catch-phrase h1 {
+    @apply text-4xl font-bold py-3;
+  }
+  .catch-phrase h1 span {
+    @apply text-yellow-500;
+  }
+  .catch-phrase h5 {
+    @apply text-center px-16 py-6;
+  }
+  .catch-phrase div {
+    @apply flex flex-col justify-center items-center pb-20;
+  }
+}
+@media screen and (max-width: 460px) {
+  .catch-phrase {
+    @apply py-10 flex flex-col justify-center items-center;
+  }
+  .catch-phrase h1 {
+    @apply text-xl font-bold py-3;
+  }
+  .catch-phrase h1 span {
+    @apply text-yellow-500;
+  }
+}
 .btn-yellow {
   @apply bg-yellow-500 text-white rounded m-6 px-20 py-3;
 }
@@ -46,6 +124,10 @@ nav ul li {
 .btn-border-white {
   @apply border-white border-2 m-6 px-20 py-3 rounded;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.btn-right-yellow {
+  @apply bg-yellow-500 text-white rounded w-32 p-2;
 }
 
 section {
@@ -178,14 +260,14 @@ section h3 {
   @apply flex flex-col justify-center items-center py-7;
 }
 .numbers div h2 {
-  @apply text-4xl font-bold;
+  @apply text-4xl font-black;
 }
 .numbers div p {
-  @apply text-white text-sm py-1;
+  @apply text-white text-sm font-semibold py-1;
 }
 
 .contact {
-  @apply flex flex-col;
+  @apply flex flex-col justify-center items-center;
   color: #777777;
 }
 .contact div {
@@ -204,6 +286,198 @@ section h3 {
   color: #777777;
   @apply w-5 my-5 text-right;
 }
+.contact div div {
+  @apply py-5;
+}
+.contact form {
+  @apply flex flex-col;
+}
+.contact form .info-contact {
+  @apply flex-row justify-between m-0;
+}
+.contact form .info-contact div {
+  @apply flex flex-col;
+}
+.contact form .info-contact div input {
+  @apply bg-gray-200 border-2 border-gray-300 w-64;
+}
+.contact form .textarea {
+  @apply flex flex-col;
+}
+.contact form .textarea textarea {
+  @apply bg-gray-200 border-2 border-gray-300;
+  width: 100%;
+}
+.contact form .submit {
+  @apply flex flex-row my-10 justify-end;
+}
+.contact form .submit button {
+  @apply text-center;
+}
+
+@media screen and (max-width: 1080px) {
+  .latest-news {
+    @apply bg-slate-800 px-10;
+  }
+  .latest-news div {
+    @apply flex flex-row justify-center items-start pb-10;
+  }
+  .latest-news div .card-img {
+    @apply flex flex-col justify-start items-center px-4 w-80;
+  }
+  .numbers {
+    @apply text-white bg-center bg-cover flex flex-row;
+    background-image: url("../images/bkg-counter.jpg");
+  }
+  .numbers div {
+    @apply flex flex-col justify-center items-center py-7;
+  }
+  .numbers div h2 {
+    @apply text-4xl font-black;
+  }
+  .numbers div p {
+    @apply text-white text-sm font-semibold py-1 px-20;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about {
+    @apply bg-white;
+  }
+  .about p {
+    @apply px-10;
+  }
+  .project {
+    @apply bg-gray-300;
+  }
+  .project p {
+    @apply px-10 py-2;
+  }
+  .project div {
+    @apply pt-10 grid grid-cols-2;
+  }
+  .testimonial {
+    @apply text-white bg-center bg-cover bg-fixed px-16;
+    background-image: url("../images/bkg-testimonial.jpg ");
+  }
+  .testimonial h3 {
+    @apply text-white;
+  }
+  .testimonial img {
+    @apply rounded-full my-10;
+  }
+  .testimonial p {
+    background-color: #694b87;
+    @apply mx-2 px-10 text-white rounded;
+  }
+  .testimonial div {
+    transform: translate(0, -50%) rotate(45deg);
+    width: 30px;
+    height: 30px;
+    background: #694b87;
+  }
+  .testimonial h4 {
+    @apply font-bold pb-8;
+  }
+  .services {
+    @apply px-10;
+  }
+  .services p {
+    @apply py-2 px-5;
+  }
+  .services div {
+    @apply flex flex-col justify-center items-center;
+  }
+  .services div .card div {
+    @apply flex flex-col justify-center items-center py-4;
+  }
+  .latest-news {
+    @apply bg-slate-800 px-10;
+  }
+  .latest-news h3 {
+    @apply text-white;
+  }
+  .latest-news p {
+    @apply py-2 px-5;
+  }
+  .latest-news div {
+    @apply flex flex-col justify-center items-start pb-10;
+  }
+  .latest-news div .card-img {
+    @apply flex flex-col justify-start items-center px-4 w-96;
+  }
+  .numbers {
+    @apply text-white bg-center bg-cover flex flex-col;
+    background-image: url("../images/bkg-counter.jpg");
+  }
+  .contact form {
+    @apply flex flex-col;
+  }
+  .contact form .info-contact {
+    @apply flex-col justify-between m-0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about {
+    @apply bg-white;
+  }
+  .about p {
+    @apply px-10;
+  }
+  .project {
+    @apply bg-gray-300;
+  }
+  .project p {
+    @apply px-10 py-2;
+  }
+  .project div {
+    @apply pt-10 grid grid-cols-1;
+  }
+  .testimonial {
+    @apply text-white bg-center bg-cover bg-fixed px-10;
+    background-image: url("../images/bkg-testimonial.jpg ");
+  }
+  .testimonial h3 {
+    @apply text-white;
+  }
+  .testimonial img {
+    @apply rounded-full my-10;
+  }
+  .testimonial p {
+    background-color: #694b87;
+    @apply mx-2 px-10 text-white rounded;
+  }
+  .testimonial div {
+    transform: translate(0, -50%) rotate(45deg);
+    width: 30px;
+    height: 30px;
+    background: #694b87;
+  }
+  .testimonial h4 {
+    @apply font-bold pb-8;
+  }
+  .services {
+    @apply px-10;
+  }
+  .services p {
+    @apply py-2 px-5;
+  }
+  .services div {
+    @apply flex flex-col justify-center items-center;
+  }
+  .services div .card div {
+    @apply flex flex-col justify-center items-center py-4;
+  }
+  .contact {
+    @apply flex flex-col justify-center items-center;
+    color: #777777;
+  }
+  .contact div {
+    @apply flex flex-col justify-center items-center py-1;
+  }
+  .contact div p {
+    @apply text-sm p-0 text-left my-1;
+  }
+}
 .vertical-white {
   @apply border-l-white inline-block border-l-2 h-16;
 }
@@ -211,6 +485,57 @@ section h3 {
 .vertical-grey {
   border-color: #777777;
   @apply inline-block border-l-2 h-10 m-5;
+}
+
+@media screen and (max-width: 768px) {
+  .vertical-white {
+    display: none;
+  }
+  .vertical-grey {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .vertical-white {
+    display: none;
+  }
+  .vertical-grey {
+    display: none;
+  }
+}
+footer {
+  @apply bg-gray-900 text-xs flex flex-row py-6 px-36;
+  color: #777777;
+}
+footer div {
+  @apply px-10;
+}
+footer h4 {
+  @apply text-white font-semibold text-lg py-3;
+}
+footer li {
+  @apply flex flex-row py-2;
+}
+footer svg {
+  @apply w-5 pr-2;
+}
+
+.copyright {
+  @apply flex justify-center bg-black text-white py-5 text-xs;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    @apply bg-gray-900 text-xs flex flex-row justify-center items-center;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer {
+    @apply bg-gray-900 text-xs flex flex-col justify-center items-center;
+  }
+  .copyright {
+    @apply flex justify-center text-center text-xs;
+  }
 }
 
 /*# sourceMappingURL=input.css.map */
