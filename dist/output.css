@@ -643,6 +643,19 @@ nav ul li {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.btn-small-yellow {
+  margin: 2.5rem;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .btn-border-white {
   margin: 1.5rem;
   border-radius: 0.25rem;
@@ -705,6 +718,8 @@ section h3 {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  padding-left: 9rem;
+  padding-right: 9rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   background-image: url("../images/bkg-testimonial.jpg ");
@@ -742,6 +757,244 @@ section h3 {
 .testimonial h4 {
   padding-bottom: 2rem;
   font-weight: 700;
+}
+
+.services {
+  padding-left: 9rem;
+  padding-right: 9rem;
+}
+
+.services p {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.services div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.services div .card div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.services div .card div svg {
+  width: 2.5rem;
+}
+
+.services div .card div h6 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+.services div .card div p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+
+.services div .card .design {
+  --tw-text-opacity: 1;
+  color: rgb(234 88 12 / var(--tw-text-opacity));
+}
+
+.services div .card .dev {
+  --tw-text-opacity: 1;
+  color: rgb(251 146 60 / var(--tw-text-opacity));
+}
+
+.services div .card .seo {
+  --tw-text-opacity: 1;
+  color: rgb(88 28 135 / var(--tw-text-opacity));
+}
+
+.latest-news {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+  padding-left: 9rem;
+  padding-right: 9rem;
+}
+
+.latest-news h3 {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.latest-news p {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.latest-news a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.latest-news a svg {
+  width: 1.25rem;
+}
+
+.latest-news a span {
+  padding-left: 0.75rem;
+  font-weight: 600;
+}
+
+.latest-news div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding-bottom: 2.5rem;
+}
+
+.latest-news div .card-img {
+  display: flex;
+  width: 24rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.latest-news div .card-img img {
+  height: 13rem;
+}
+
+.latest-news div .card-img .info-card {
+  display: flex;
+  flex-direction: column;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.latest-news div .card-img .info-card h4 {
+  color: #2b2b2b;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.latest-news div .card-img .info-card p {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  text-align: left;
+}
+
+.latest-news div .card-img .info-card a {
+  padding: 2rem;
+  text-align: left;
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity));
+}
+
+.numbers {
+  display: flex;
+  flex-direction: row;
+  background-size: cover;
+  background-position: center;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  background-image: url("../images/bkg-counter.jpg");
+}
+
+.numbers div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.numbers div h2 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+
+.numbers div p {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  color: #777777;
+}
+
+.contact div {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.contact div p {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding: 0px;
+  text-align: left;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.contact div p:first-child {
+  padding: 0px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity));
+}
+
+.contact div .network {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.contact div .network svg {
+  color: #777777;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  width: 1.25rem;
+  text-align: right;
+}
+
+.vertical-white {
+  display: inline-block;
+  height: 4rem;
+  border-left-width: 2px;
+  --tw-border-opacity: 1;
+  border-left-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.vertical-grey {
+  border-color: #777777;
+  margin: 1.25rem;
+  display: inline-block;
+  height: 2.5rem;
+  border-left-width: 2px;
 }
 
 /*# sourceMappingURL=output.css.map */

@@ -1,0 +1,7 @@
+.vertical-white { 
+    @apply border-l-white inline-block border-l-2 h-16;
+} 
+.vertical-grey { 
+    border-color: $text-color;
+    @apply inline-block border-l-2 h-10 m-5;
+} 

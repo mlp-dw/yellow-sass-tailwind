@@ -22,7 +22,7 @@ section{
     }
 }
 .testimonial{
-    @apply text-white bg-center bg-cover bg-fixed;
+    @apply text-white bg-center bg-cover bg-fixed px-36;
     background-image: url('../images/bkg-testimonial.jpg ');
     h3{
         @apply text-white;
@@ -44,4 +44,114 @@ section{
         @apply font-bold pb-8;
     }
 }
+.services{
+    @apply px-36;
+    p{
+        @apply py-2;
+    }
+    div{
+        @apply flex flex-row justify-center items-center;
+        .card{
+            div{
+                @apply flex flex-col justify-center items-center py-16 ;
+                svg{
+                    @apply w-10 ;
+                }
+                h6{
+                    @apply font-bold text-xl py-2;
+                    
+                }
+                p{
+                    @apply px-4 text-center ;
+                }
+            }
+            .design{
+                @apply text-orange-600;
+            }
+            .dev{
+                @apply text-orange-400;
+            }
+            .seo{
+                @apply text-purple-900;
+            }
+        }
+    }
+}
+.latest-news{
+    @apply bg-slate-800 px-36;
+    h3{
+        @apply text-white;
+    }
+    p{
+        @apply py-2;
+    }
+    a{
+        @apply flex flex-row justify-around items-center;
+        svg{
+            @apply w-5;
+        }
+        span{
+            @apply font-semibold pl-3;
+        }
+    }
+    div{
+        @apply flex flex-row justify-center items-start pb-10;
+        .card-img{
+            @apply flex flex-col justify-start items-center px-4 w-96;
+            img{
+                @apply h-52 ;
+            }
+            .info-card{
+                @apply flex flex-col bg-white;
+                h4{
+                    color: darken($text-color, 30%);
+                    @apply text-2xl font-bold p-6;
+                }
+                p{
+                    @apply text-left px-6 ;
+                }
+                a{
+                    @apply text-left text-yellow-500 p-8 ;
+                }
+            }
+        }
+    }
+}
 
+.numbers{
+    @apply text-white bg-center bg-cover flex flex-row;
+    background-image: url('../images/bkg-counter.jpg');
+    div{
+        @apply flex flex-col justify-center items-center py-7;
+        h2{
+            @apply text-4xl font-bold;
+        }
+        p{
+            @apply text-white text-sm py-1
+        }
+    }
+
+}
+.contact{
+    @apply flex flex-col;
+    color: $text-color;
+    div{
+        @apply flex flex-row justify-around items-start mx-8;
+        p{
+            @apply text-sm p-0 text-left my-5;
+        }
+        p:first-child{
+            @apply text-yellow-500 text-sm p-0;
+        }
+        .network{
+            @apply flex flex-row justify-end;
+            svg{
+                color: $text-color;
+                @apply w-5 my-5 text-right;
+            }
+        }
+    }
+    form{
+        
+    }
+}
